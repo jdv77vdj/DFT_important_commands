@@ -3,7 +3,7 @@
 from pymatgen.core import Lattice, Structure
 from pymatgen.symmetry.analyzer import SpacegroupAnalyzer
 import pymatgen.io.vasp
-structure = Structure.from_file("POSCAR")
+structure = Structure.from_file("POSCAR") #Here could specify a path, but POSCAR is in same directory as this script. 
 sga = SpacegroupAnalyzer(structure)
 sga.get_conventional_standard_structure()
 conventional_structure = sga.get_conventional_standard_structure()
