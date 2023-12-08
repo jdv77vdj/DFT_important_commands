@@ -1,6 +1,5 @@
 #!/bin/bash
-
-#This file is for printing only the first lines of 'get_lattice_parameters.py' without all the atoms positions
-output=$(python get_lattice_parameters.py)
-# Print the first 9 lines of the output
+# Run the Python script with the provided argument and capture its output
+output=$(python lattice_parameters.py "$1")
+# Print the first 5 lines of the output
 echo "$output" | head -n 9
