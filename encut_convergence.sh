@@ -12,13 +12,10 @@ for ecut in 300 400 450 500 550 600; do
 
 cat > INCAR<<!
 SYSTEM = Si
-
 ISIF = 3
 ISTART = 0
 ICHARG = 2
-
 ENCUT = $ecut
-
 ISMEAR = 0
 SIGMA = 0.1
 !
