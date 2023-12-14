@@ -22,8 +22,7 @@ mpirun $vasp > result.vasp
 
 awk '/energy  without entropy=/ {ene=$7; print ene} ' OUTCAR > tmp
 tail -2 OSZICAR | awk '/RMM/ {x=$2; print x} ' > tmp2
-awk '/volume of cell/ {number=$5; print number} ' OUTCAR | tail -1 > tmp3
 
-echo $k $( cat tmp ) $( cat tmp2) $( cat tmp3)  >> kp.dat
+echo $k $( cat tmp ) $( cat tmp2) >> kp.dat
 
 done
