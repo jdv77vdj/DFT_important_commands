@@ -1,5 +1,5 @@
 # Get the band gap of a DOS calculation with VASP
-#EIGENVAL file is needed
+#EIGENVAL file is needed.
 
 import pymatgen.io.vasp.outputs as pmg
 eig = pmg.Eigenval('EIGENVAL')
