@@ -11,6 +11,6 @@ conventional_structure = sga.get_conventional_standard_structure()
 # Write file
 # In [path], insert path to write the POSCAR file of conventional cell
 pymatgen.io.vasp.Poscar.write_file(pymatgen.io.vasp.Poscar(
-conventional_structure),’[path]/conventional_cell.POSCAR’)
+conventional_structure),'[path]/conventional_cell.POSCAR')
 
 
