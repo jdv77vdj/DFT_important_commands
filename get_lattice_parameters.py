@@ -15,7 +15,7 @@ except Exception as e:
     print("Error:", e)
     sys.exit(1)
 
-structure = Structure.from_file("CONTCAR")
+#structure = Structure.from_file("CONTCAR")
 sga = SpacegroupAnalyzer(structure)
 
 # Print space group information
