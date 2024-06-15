@@ -15,7 +15,7 @@ except Exception as e:
     print("Error:", e)
     sys.exit(1)
 
-#structure = Structure.from_file("CONTCAR")
+#str = Structure.from_file("CONTCAR")
 sga = SpacegroupAnalyzer(structure)
 
 # Print space group information
@@ -23,8 +23,9 @@ gp = sga.get_space_group_number()
 gs = sga.get_space_group_symbol()
 cs = sga.get_crystal_system()
 lt = sga.get_lattice_type()
+vol = structure.volume
 
-print(f"Space group number: {gp}\nSpace group symbol: {gs}\nCrystal system: {cs}\nLattice type: {lt}")
+print(f"Space group number: {gp}\nSpace group symbol: {gs}\nCrystal system: {cs}\nLattice type: {lt}\nVolume: {vol}")
 
 
 conv = sga.get_conventional_standard_structure()
